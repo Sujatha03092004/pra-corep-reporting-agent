@@ -2,7 +2,8 @@
 An Agentic RAG-based AI designed to automate the interpretation of the PRA Rulebook 2025 and Annex II Reporting Instructions for COREP CA1 (Own Funds) reporting.
 
 ## Demo Link
- (The fastest way to verify the Agent's reasoning and output quality live without local setup.)
+https://pra-corep-reporting-agent-dnql8d3uvwbke4xkuwtekx.streamlit.app
+(The fastest way to verify the Agent's reasoning and output quality live without local setup.)
 
 ## Overview
 Regulatory reporting is labor-intensive and error-prone. This prototype demonstrates how an "Agentic" AI can:
@@ -29,14 +30,14 @@ Regulatory reporting is labor-intensive and error-prone. This prototype demonstr
 - src/ingest.py: Document processor (PDF to Vector chunks).
 
 ## How to run locally
-**Step 1:** Download the zip folder onto your local computer and extract it. 
-**Step 2:** Create a virtual environment (preferably Python 3.10) and activate it: 
+- **Step 1:** Download the zip folder onto your local computer and extract it. 
+- **Step 2:** Create a virtual environment (preferably Python 3.10) and activate it: 
 .venv/Scripts/activate # On Windows 
-**Step 3:** Create a .env file in the root directory and store your Groq API Key by pasting this line: GROQ_API_KEY=YOUR_API_KEY (Get your key at https://console.groq.com/) 
-**Step 4:** Run the command if you are adding more PDFs to `data/raw` or deleting the existing vector_db:
+- **Step 3:** Create a .env file in the root directory and store your Groq API Key by pasting this line: GROQ_API_KEY=YOUR_API_KEY (Get your key at https://console.groq.com/) 
+- **Step 4:** Run the command if you are adding more PDFs to `data/raw` or deleting the existing vector_db:
 python src/ingest.py 
 This will process the PDFs and create the vector_db folder.  
-**Step 5:** Run the command:
+- **Step 5:** Run the command:
 streamlit run app.py
 The local web interface will open automatically.
 
