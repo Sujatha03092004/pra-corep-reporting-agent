@@ -1,0 +1,13 @@
+# AI and RAG
+langchain
+langchain-community
+langchain-groq
+langchain-huggingface
+sentence-transformers
+
+# Data and Indexing
+faiss-cpu
+
+# UI and Environment
+streamlit
+python-dotenv
